@@ -1,0 +1,653 @@
+<!doctype html>
+<html>
+<head>
+<title>WOWSlider</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="WOWSlider" />
+	
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+    
+	<!-- End WOWSlider.com HEAD section -->
+    
+    <title>WOWSlider</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="WOWSlider" />
+	
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section -->
+
+
+<meta charset="utf-8">
+<title>Desarrollo de aplicaciones web</title>
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app9.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+<!--grupo JavaScript-->
+ <script src="js/jquery-1.11.2.min.js"></script>
+ <script src="js/jquery.mobile-1.4.5.min.js"></script>
+ <script src="js/acciones.js" type="text/javascript"></script>
+ 
+<script src="phonegap.js"></script> <!--necesario*/-->
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<body>
+<div data-role="page" id="principal" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1> Desarrola Aplicaciones Web</h1>
+ </div>
+ <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/imag1.jpg" alt="imag1" title="imag1" id="wows1_0"/></li>
+		<li><img src="data1/images/img4.jpg" alt="img4" title="img4" id="wows1_1"/></li>
+		<li><img src="data1/images/img5.jpg" alt="img5" title="img5" id="wows1_2"/></li>
+		<li><img src="data1/images/imh3.jpg" alt="imh3" title="imh3" id="wows1_3"/></li>
+		<li><img src="data1/images/img7.jpg" alt="img7" title="img7" id="wows1_4"/></li>
+		<li><img src="data1/images/img6.jpg" alt="img6" title="img6" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/img9.jpg" alt="wowslider.com" title="img9" id="wows1_6"/></a></li>
+		<li><img src="data1/images/img8.png" alt="img8" title="img8" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="imag1"><span><img src="data1/tooltips/imag1.jpg" alt="imag1"/>1</span></a>
+		<a href="#" title="img4"><span><img src="data1/tooltips/img4.jpg" alt="img4"/>2</span></a>
+		<a href="#" title="img5"><span><img src="data1/tooltips/img5.jpg" alt="img5"/>3</span></a>
+		<a href="#" title="imh3"><span><img src="data1/tooltips/imh3.jpg" alt="imh3"/>4</span></a>
+		<a href="#" title="img7"><span><img src="data1/tooltips/img7.jpg" alt="img7"/>5</span></a>
+		<a href="#" title="img6"><span><img src="data1/tooltips/img6.jpg" alt="img6"/>6</span></a>
+		<a href="#" title="img9"><span><img src="data1/tooltips/img9.jpg" alt="img9"/>7</span></a>
+		<a href="#" title="img8"><span><img src="data1/tooltips/img8.png" alt="img8"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">http://wowslider.net/</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+ <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+  <h1>Desarrollo de aplicaciones wed </h1>
+   <div>
+   <h1 align="center">¿Què es una pàgina web?</h1>
+    <p align="center">Las aplicaciones web reciben este nombre porque se ejecutan en la internet. Es decir que los datos o los archivos en los que trabajas son procesados y almacenados dentro de la web. Estas aplicaciones, por lo general, no necesitan ser instaladas en tu computador.
+El concepto de aplicaciones web está relacionado con el almacenamiento en la nube. Toda la información se guarda de forma permanente en grandes servidores de internet y nos envian a nuestros dispositivos o equipos los datos que requerimos en ese momento, quedando una copia temporal dentro de nuestro equipo. 
+En cualquier momento, lugar y desde cualquier dispositivo podemos acceder a este servicio, sólo necesitamos una conexión a internet y nuestros datos de acceso,  que por lo general son el nombre de usuario y contraseña. 
+ </p>
+    <br>
+   </div>
+   <div align="center">
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image60','','imagenes/hola2.jpg',1)"><img src="imagenes/hola1.jpg" width="257" height="184" id="Image5"></a></div>
+  </div>
+ </div>
+
+ <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+  <h1> 	Web y Funcionamiento de Internet
+  </h1>
+   <div>
+    <p align="center">
+
+Se denomina aplicación web al software que los usuarios pueden utilizar accediendo a un servidor web a través de Internet o de una intranet mediante un navegador.
+Las aplicaciones web son populares debido a lo práctico del navegador web como cliente ligero, a la independencia del sistema operativo, así como a la facilidad para actualizar y mantener aplicaciones sin distribuir e instalarlas en los ordenadores de sus usuarios.
+
+Existen sitios web que son auténticas aplicaciones web como la Wikipedia, twitter, facebook. Otros ejemplos de  aplicaciones web son los webmails, wikis, weblogs, los servicios de Google (drive, calendar, etc).
+
+Una aplicación web debe contener elementos que permitan una comunicación activa entre el usuario y la información. Por ejemplo rellenar y enviar formularios y responder a determinadas acciones ofreciendo a continuación datos y la información previamente almacenados en una base de datos. </p>
+    <br>
+   </div>
+   <div align="center">
+    <img src="imagenes/imag1.jpg" width="50%" height="50%">
+   </div>
+  </div>
+ </div>
+ 
+ <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+  <h1>  Introducción HTML </h1>
+   <div>
+   <p align="center"> °HTML5 no es una reformulación de versiones previas.
+
+HTML5 incluye la redefinición de elementos, la inclusión de nuevos elementos e incluye el uso de nuevas tecnologías como video, audio y canvas.
+</p>
+<h1 align="center"> Elementos</h1>
+<p align="center" >Todos los elementos HTML se pueden  dividir en dos tipos básicos:</p>
+
+<p align="center"Elementos en bloque</p>
+<p align="center">Elementos en línea</p>
+
+   <p align="center">Elementos Básicos</p>
+
+    <p align="center">El uso de etiquetas (tags) con estructura básica <NombreDeEtiqueta>
+</p>
+<p align="center"> Etiquetas de pares: La mayoría de las etiquetas vienen en pares,  es decir:
+Etiqueta Apertura = Inicio
+Etiqueta Cierre = Final (contienen una diagonal /)
+<br><EtiquetaApertura> Contenido </EtiquetaCierre>
+o
+<p align="center" >EtiquetaApertura>
+  Contenido
+</EtiquetaCierre>
+</p>
+</p>
+   </div>
+   <div align="center">
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image60','','imagenes/img5.jpg',1)"><img src="imagenes/img4.jpg" width="300" height="168" id="Image2"></a></div>
+  </div>
+ </div>
+ <div>
+  <ul data-role="listview" data-theme="b" class="ul-listview ui-group-theme-b">
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Html5 </h2>
+    <p> contenido</p>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Css </h2>
+    <p>Intoducciòn</p>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2> DreamWaever</h2>
+    <p> Introducciòn  </p>
+   </a>
+   </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Css</h2>
+    <p> Reglas    </p>
+   </a>
+   </li>
+    <li class="ui-first-child ui-last-child">
+   <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Wamp</h2>
+    <p> Introducciòn</p>
+   </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2> JavaScript</h2>
+    <p> Pequeño resumen </p>
+   </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>PHP</h2>
+    <p> Pequeño resumen </p>
+   </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2> MySQL</h2>
+    <p> Pequeño resumen </p>
+   </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2> Subida a la  red de sitios web</h2>
+    <p> Pequeño resumen </p>
+   </a>
+   </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina10" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2> Temario</h2>
+    <p>Contenido </p>
+   </a>
+   </li>
+   </ul>
+	<div data-role="main" class="ui-content" align="center">
+   <div style="width:60%;">
+   <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+   <li class="ui-first-child ui-last-child">
+	 <a href="https://www.gcfaprendelibre.org/tecnologia/curso/informatica_basica/aplicaciones_web_y_todo_acerca_de_la_nube/1.do" data-role="button"> <h2>Ver màs</h2>
+      </a>
+      </li>
+      </ul>
+      </div>
+     </div>
+  </div>
+
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+   <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+  </div>
+   <div> 
+   <h4> Tutorial Daw  </h4>
+   <h4> Julia Liliana Ramírez Casquera </h4>
+  </div>
+ </div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-theme="b">
+   <h1> Introducción  </h1>
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <p align="center"> °HTML5 no es una reformulación de versiones previas.
+
+HTML5 incluye la redefinición de elementos, la inclusión de nuevos elementos e incluye el uso de nuevas tecnologías como video, audio y canvas. </p>
+<p align="center">HTML es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet. Se trata de la sigla que corresponde a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto, que podría ser traducido como Lenguaje de Formato de Documentos para Hipertexto.</p>
+	
+  </div>
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image62','','imagenes/img7.jpg',1)"><img src="imagenes/img5.jpg" width="300" height="168" id="Image62"></a>
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:60%;">
+   <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+   <li class="ui-first-child ui-last-child">
+	 <a href="https://www.desarrolloweb.com/articulos/que-es-html5.html"data-role="button"> <h2> Ver màs</h2>
+      </a>
+      </li>
+      </ul>
+      </div>
+</div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <div>
+   <img src="res/android/mdpi.png" width="46" height="46">
+  </div>
+   <h4>Tutorial Daw </h4>
+   <p>Julia Liliana Ramirez Casquera</p>
+  </div>
+</div>
+</div>
+  
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-theme="b">
+   <h1>CSS</h1>
+  </div>
+  <div data-role="content" align="center">
+   <div>
+   <p align="center">Cascading Style Sheets (CSS) ‘Hoja de estilo en cascada’ es un lenguaje usado para definir y crear la presentación de un documento estructurado escrito en HTML.
+CSS separa la estructura de un documento de su presentación.
+La información de estilo puede ser definida en un documento separado o en el mismo documento HTML.
+</p>
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image60','','imagenes/Imagen2.jpg',1)"><img src="imagenes/Imagen1.jpg" width="775" height="429" id="Image60"></a>
+<h1 align="center">Estructura básica</h1>
+<p align="center">Comentarios   /*Esto es un comentario en CSS*/</p>
+<h1 align="center">Sintaxis (ejemplo(</h1>
+<p align="center">Clase (para varios elementos)
+
+.center { 
+   text-align: center;
+   color: red;
+</p>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image59','','imagenes/img9.jpg',1)"><img src="imagenes/img6.jpg" width="300" height="168" id="Image59"></a> </div>
+  </div>
+     <div data-role="main" class="ui-content" align="center">
+   <div style="width:60%;">
+   <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+   <li class="ui-first-child ui-last-child">
+	 <a href="http://www.maestrosdelweb.com/introcss/" data-role="button"> <h2>Ver màs</h2>
+      </a>
+      </li>
+      </ul>
+      </div>
+  </div>
+ 
+ <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <div>
+   <img src="res/android/mdpi.png" width="46" height="46">
+  </div>
+   <h4>Tutorial Daw </h4>
+   <h4>Julia Liliana Ramirez Casquera</h4>
+  </div>
+</div>
+</div>
+  
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-theme="b">
+   <h1>DreamWaever </h1>
+  </div>
+  <div data-role="content" align="center">
+   <div>
+   <h1>¿Què es y para que sirve?</h1>
+    <p align="justify">El Dreamweaver, es un programa de la empresa Adobe que sirve para diseño y programación web, básicamente para hacer o modificar páginas de Internet. Para utilizarlo necesitas al menos algún conocimiento de lenguaje Html o PHP, estos son códigos o lenguajes que se utilizan para desarrollar sitios web.
+
+El programa es realmente muy completo y sus nuevas versiones son cada vez más sencillas, aunque siempre necesitarás conocer algo del tema para poder utilizarlo. Buscando en Internet podrás encontrar varios tutoriales que te ayudarán a comenzar a utilizar este programa.
+   </p> 
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image60','','imagenes/imagen6.jpg',1)"><img src="imagenes/imagen7.jpg" width="176" height="192" id="Image3"></a> </div>
+     <div data-role="main" class="ui-content" align="center">
+   <div style="width:60%;">
+   <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+   <li class="ui-first-child ui-last-child">
+	 <a href="https://sites.google.com/site/dramweber/blog" data-role="button"> <h2>Ver màs </h2>
+      </a>
+      </li>
+      </ul>
+      </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <div>
+   <img src="res/android/mdpi.png" width="46" height="46">
+  </div>
+   <h4> Tutorial Daw</h4>
+   <h4> Julia liliana ramirez Casquera</h4>
+  </div>
+</div>
+</div>
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-theme="b">
+   <h1> Reglas de Css (Algunos ejemplo) </h1>
+  </div>
+  <div data-role="content" align="center">
+   <div>
+   <h1>Selectores Css</h1>
+    <p align="center">Definen que elementos HTML serán  afectados por las declaraciones
+
+<p>Existen varios tipos de selectores</p>
+<p<Elementos</p>
+<p>Clases</p>
+<p>ID’s</p>
+<p>Descendientes</p>
+<p>Hijos</p>
+<pp>Adyacentes (hermanos o siblings), etc.</p>
+
+   </p> 
+   <h1>Selectores tipo Etiqueta</h1>
+   <p align="center">Selectores tipo etiqueta o de elementos,  son los más simples y comunes.
+h1 {
+color:blue;
+}
+body {
+background-color:red;
+}
+</p>
+  </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <div>
+   <img src="res/android/mdpi.png" width="46" height="46">
+  </div>
+   <h4> Tutorial Daw</h4>
+   <h4> Julia Liliana Ramirez Casquera</h4>
+  </div>
+</div>
+</div>
+
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-theme="b">
+   <h1> WampServer </h1>
+  </div>
+  <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>WampServer</h1>
+   <div align="center">
+   <h4>Características: </h4>
+   <p>Manejo de Bases de datos con MySQL ,Software para servidor web Apache ,Software para poder programar script con PHP (generalmente) , Permite el manejo sencillo de Bases de Datos con PHPMyAdmin y SQLiteManager ,Es completamente gratuito</p>
+   <img src="imagenes/visor05.jpg"width="50%" height="50%">
+     </div>
+ </div>
+	  
+  <div data-role="content" align="center">
+   <div>
+   <h4>¿Qué es Wamp Server?</h4>
+    <p>Es un entorno de desarrollo web que nos va a permitir tener nuestro propio servidor o host local (instalado en nuestro ordenador). 
+Es usado (entre otros) por desarrolladores y/o programadores para realizar prácticas de sus proyectos  web antes de subirlos al servidor web en internet. 
+En esta píldora formativa vamos a utilizar como servidor local WampServer  (existen más) para poder realizar la instalación de la plataforma de Elearning Moodle y poder realizar así prácticas antes de subir dichas modificaciones al servidor Web real.  </p>
+    
+    </div>
+   </div>
+  <div data-role="footer" align="center" data-theme="" data-position="fixed">
+  <div>
+   <img src="res/android/mdpi.png" width="46" height="46">
+  </div>
+   <h4> Tutorial Daw </h4>
+   <h4> Julia Liliana Ramirez Casquera</h4>
+  </div>
+  </div>
+ </div>
+
+ <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-theme="b">
+   <h1>JavaScript </h1>
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <h4> ¿Què es?</h4>
+    <p align="center" align="justify">JavaScript fue diseñado para añadir interactividad a páginas HTML ,es un lenguaje de secuencias de comandos.
+ Tambièn es un lenguaje de secuencias de comandos es un lenguaje de programación ligero.
+JavaScript está normalmente incrustada directamente en las páginas HTML
+JavaScript es un lenguaje interpretado (significa que puede ejecutar secuencias de comandos sin necesidad de compilación )
+Cualquier persona puede utilizar JavaScript sin necesidad de adquirir una licencia.</p>
+<h4 align="center">¿Qué puede hacer un JavaScript?</h4>
+<p align="center">JavaScript brinda a los diseñadores HTML una herramienta de programación.
+Los diseñadores HTML normalmente no son programadores, pero JavaScript es un lenguaje con una sintaxis muy simple!, Casi todo el mundo puede poner pequeños "fragmentos" de código en las páginas HTML.
+JavaScript puede poner texto dinámico en una página HTML, -Un comando de JavaScript como: document.write ("<h1>" + nombre + "</h1>") puede escribir un texto o variable en una página HTML.
+JavaScript puede reaccionar a eventos, -Un JavaScript se puede programar  para ejecutarse cuando sucede algo, como cuando ha terminado de cargar una página o cuando un usuario hace clic en un elemento HTML.
+Puede leer y escribir elementos HTML. Un JavaScript puede leer y modificar el contenido de un elemento HTML
+Puede utilizar JavaScript para validar datos. 
+JavaScript puede utilizarse para detectar el navegador del visitante: JavaScript puede utilizarse para detectar el navegador del visitante y  dependiendo del navegador cargar otra página diseñada específicamente para ese navegador.
+JavaScript puede utilizarse para crear cookies:  JavaScript puede utilizarse para almacenar y recuperar información en equipo del visitante</p>
+      <img src="imagenes/visor9.jpg" width="50%" height="50%">
+    </div>
+   </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <div>
+   <img src="res/android/mdpi.png" width="46" height="46">
+  </div>
+   <h4> Tutorial Daw </h4>
+   <h4> Julia Liliana Ramirez Casquera</h4>
+  </div>
+  </div>
+ </div>
+
+ <div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-theme="b">
+   <h1> PHP</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>PHP</h1>
+   <div align="center">
+    <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+	<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+		<li><img src="data1/images/visor1.jpg" alt="visor1" title="visor1" id="wows1_0"/></li>
+		<li><img src="data1/images/visor2.jpg" alt="visor2" title="visor2" id="wows1_1"/></li>
+		<li><img src="data1/images/visor3.jpg" alt="visor3" title="visor3" id="wows1_2"/></li>
+		<li><img src="data1/images/visor4.png" alt="visor4" title="visor4" id="wows1_3"/></li>
+		<li><img src="data1/images/visor5.jpg" alt="visor5" title="visor5" id="wows1_4"/></li>
+		<li><img src="data1/images/visor6.png" alt="visor6" title="visor6" id="wows1_5"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/visor7.png" alt="http://wowslider.net/" title="visor7" id="wows1_6"/></a></li>
+		<li><img src="data1/images/visor8.png" alt="visor8" title="visor8" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="visor1"><span><img src="data1/tooltips/visor1.jpg" alt="visor1"/>1</span></a>
+		<a href="#" title="visor2"><span><img src="data1/tooltips/visor2.jpg" alt="visor2"/>2</span></a>
+		<a href="#" title="visor3"><span><img src="data1/tooltips/visor3.jpg" alt="visor3"/>3</span></a>
+		<a href="#" title="visor4"><span><img src="data1/tooltips/visor4.png" alt="visor4"/>4</span></a>
+		<a href="#" title="visor5"><span><img src="data1/tooltips/visor5.jpg" alt="visor5"/>5</span></a>
+		<a href="#" title="visor6"><span><img src="data1/tooltips/visor6.png" alt="visor6"/>6</span></a>
+		<a href="#" title="visor7"><span><img src="data1/tooltips/visor7.png" alt="visor7"/>7</span></a>
+		<a href="#" title="visor8"><span><img src="data1/tooltips/visor8.png" alt="visor8"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">http://wowslider.net/</a> by WOWSlider.com v8.7</div>
+	<div class="ws_shadow"></div>
+	</div>	
+	<script type="text/javascript" src="engine1/wowslider.js"></script>
+	<script type="text/javascript" src="engine1/script.js"></script>
+	<!-- End WOWSlider.com BODY section -->
+     </div>
+ </div>
+	  
+  <div data-role="content" align="center">
+   <div>
+   <h1 align="center"> ¿Què es?</h1>
+    <p align="center">es un lenguaje de programación interpretado que se utiliza para la generación de páginas web de forma dinámica. Éste código se ejecuta al lado del servidor y se incrusta dentro del código HTML. Cabe destacar que es un lenguaje de código abierto, gratuito y multiplataforma.</p> 
+    <h1 align="center"> Funcionamiento</h1>
+    <p align="center"> Enviamos una petición al servidor, ejemplo www.ibrugor.com/blog/index.php</p>
+<p align="center">El servidor recibe la petición y busca la página a entregar.</p>
+<p align="center">Si la página contiene la extensión “.php”, el intérprete de PHP la procesa.</p>
+<p align="center">El servidor ejecuta el código PHP de la página y prepara el resultado final, el HTML.</p>
+<p align="center">Se envía la página HTML al cliente final.</p>
+
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image81','','imagenes/visor3.jpg',1)"><img src="imagenes/visor2.jpg" width="300" height="168" id="Image81"></a> </div>
+   </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <div>
+   <img src="res/android/mdpi.png" width="46" height="46">
+  </div>
+   <h4>Tutorial Daw </h4>
+  <h4> Julia Liliana Ramirez Casquera</h4>
+  </div>
+  </div>
+ </div>
+
+ <div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-theme="b">
+   <h1> MySQL </h1>
+  </div>
+  <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>MySQL!</h1>
+   <div align="center">
+   <img src="imagenes/delfi.jpg" width="50%" height="50%">
+     </div>
+ </div>
+	  
+  <div data-role="content" align="center">
+   <div>
+    <p>MySQL es un sistema de gestión de base de datos relacional (RDBMS) de código abierto, basado en lenguaje de consulta estructurado (SQL).
+MySQL se ejecuta en prácticamente todas las plataformas, incluyendo Linux, UNIX y Windows. A pesar de que se puede utilizar en una amplia gama de aplicaciones, MySQL se asocia más con las aplicaciones basadas en la web y la publicación en línea y es un componente importante de una pila empresarial de código abierto llamado LAMP. LAMP es una plataforma de desarrollo web que utiliza Linux como sistema operativo, Apache como servidor web, MySQL como sistema de gestión de base de datos relacional y PHP como lenguaje de programación orientado a objetos (a veces, Perl o Python se utiliza en lugar de PHP). </p>
+    
+    </div>
+   </div>
+   <div data-role="main" class="ui-content" align="center">
+   <div style="width:45%;">
+   <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+   <li class="ui-first-child ui-last-child">
+	 <a href="https://searchdatacenter.techtarget.com/es/definicion/MySQL" data-role="button"> <h2>Si quieres saber más del tema da click aqui</h2>
+      </a>
+      </li>
+      </ul>
+      </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <div>
+   <img src="res/android/mdpi.png" width="46" height="46">
+  </div>
+   <h4> Tutorial Daw</h4>
+   <h4> Julia Liliana Ramirez Casquera</h4>
+  </div>
+  </div>
+ </div>
+ 
+  <div data-role="page" id="Pagina9" data-add-back-btn="true" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-theme="b">
+   <h1>Subida a la red de sitios red </h1>
+   <p align="center">
+  </div>
+  <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Sitos wb</h1>
+   <div align="center">
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image75','','imagenes/sitios.jpg',1)"><img src="imagenes/sitio.jpg" width="638" height="479" id="Image75"></a>
+    </div>
+ </div>
+	  
+  <div data-role="content" align="center">
+   <div>
+    <p align="justify">Todos los sitios web públicamente accesibles constituyen una gigantesca World Wide Web de información; y un gigantesco entramado de recursos de alcance mundial.
+A las páginas de un sitio web se accede frecuentemente a través de un URL raíz común llamado portada, que normalmente reside en el mismo servidor físico. Los URL organizan las páginas en una jerarquía, aunque los hiperenlaces entre ellas controlan más particularmente cómo el lector percibe la estructura general y cómo el tráfico web fluye entre las diferentes partes de los sitios.
+Los sitios web están escritos en código HTML (Hyper Text Markup Language), o dinámicamente convertidos a éste, y se acceden aplicando un software conveniente llamado navegador web, también conocido como un cliente HTTP. Los sitios web pueden ser visualizados o accedidos desde un amplio abanico de dispositivos con conexión a Internet, como computadoras personales, portátiles, PDAs, y teléfonos móviles </p>
+  <img src="imagenes/imag1.jpg" width="50%" height="50%">
+    </div>
+   </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <div>
+   <img src="res/android/mdpi.png" width="46" height="46">
+  </div>
+   <h4> Tutorial Daw</h4>
+   <h4> Julia Liliana Ramirez Casquera</h4>
+  </div>
+  </div>
+ </div>
+ 
+ 
+  <div data-role="page" id="Pagina10" data-add-back-btn="true" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-theme="b">
+   <h1> Temario</h1>
+  </div>
+	  
+  <div data-role="content" align="center">
+   <div>
+   <p align="center"> Desarrollo de aplicaciones web.
+Web y funcionamientos de internet.</p>
+<p align="center">Introducción HTML</p>
+<p align="center">HTML</p>
+   <p>Contenido</p>
+<P align="center">CSS</P>
+   <p> Introducción </p>
+<p align="center">DreamWaever</p>
+        <p>Introducción</p>
+<p align="center">CSS</p>
+   <p> Reglas</p>
+<p align="center">Wamp</p>
+    <p>Introducción</p>
+<p align="center">JavaScript</p>
+ <p> Introducción</p>
+<p align="center">PHP</p>
+   <p>Introducción</p>
+<p align="center">MySQL</p>
+   <p>Introducción</p>
+<p align="center">Subida a la red de sitios web</p>
+    <p>Introducción</p>
+<p align="center">Temario</p>
+    <p> Contenido</p>
+    <p> Datos del desarrollador </p>
+
+    
+    <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Datos del desarrollador</h1>
+   <div align="center">
+   <p align="center"> Desarrollador: Julia Liliana Ramirez Casquera</p>
+   <p align="center"> Semestre y grupo: 4F</p>
+   <p align="center">Submodulo:  Desarrolla Aplicaciones Móviles </p>
+   <p align="center"> Docente: Josè Antonio Gòmez Hèrnandez</p>
+   
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image76','','imagenes/daw.jpg',1)"><img src="imagenes/visor05.jpg" width="690" height="302" id="Image76"></a> </div>
+ </div>
+    
+    </div>
+   </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <div>
+   <img src="res/android/mdpi.png" width="46" height="46">
+  </div>
+   <h4> Tutorial DAW </h4>
+   <h4>Julia Liliana Ramirez Casquera</h4>
+  </div>
+  </div>
+ </div>
+ 
+ 
+
+</body>
+</html>
